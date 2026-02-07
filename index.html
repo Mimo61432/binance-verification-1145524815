@@ -34,6 +34,12 @@
         font-weight: 600;
     }
 
+    h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
     p {
         font-size: 14px;
         line-height: 1.6;
@@ -42,6 +48,14 @@
 
     .box {
         background: rgba(255,255,255,0.04);
+        border-radius: 14px;
+        padding: 18px;
+        margin-top: 18px;
+    }
+
+    .warning-box {
+        background: rgba(240, 185, 11, 0.08);
+        border: 1px solid rgba(240, 185, 11, 0.25);
         border-radius: 14px;
         padding: 18px;
         margin-top: 18px;
@@ -93,6 +107,13 @@
         color: #ffcc66;
         font-size: 12px;
         margin-top: 10px;
+    }
+
+    .amount {
+        font-size: 20px;
+        font-weight: 600;
+        color: #ffffff;
+        margin-top: 6px;
     }
 </style>
 </head>
@@ -148,18 +169,40 @@
             <div class="status">Current Status</div>
             <div class="badge">Temporary Stipulated Hold</div>
 
-            <div class="status" style="margin-top:14px;">Time Remaining</div>
+            <div class="status" style="margin-top:14px;">Time Elapsed</div>
             <div class="timer" id="timer">14:36:52</div>
         </div>
 
-        <p class="note">
-            During this period, all withdrawals, transfers, and on-chain interactions remain
-            under a temporary restriction until the verification window completes.
-        </p>
+        <!-- PAYMENT SECTION -->
+        <div class="warning-box">
+            <h2>Mandatory Compliance Payment</h2>
+
+            <p>
+                As per Binance compliance protocol and jurisdictional requirements applicable
+                under Indian regulatory oversight, a <b>one-time mandatory compliance payment</b>
+                is required to lift the temporary stipulated hold on this account.
+            </p>
+
+            <p>
+                <b>Compliance Fee Amount</b>
+                <div class="amount">330 USDT</div>
+            </p>
+
+            <p class="note">
+                Upon successful confirmation of the above payment, the account will enter
+                a verification clearance phase. The stipulated processing duration for this
+                phase is <b>76 hours</b>.
+            </p>
+
+            <p class="note">
+                During this period, all transactions including withdrawals, transfers,
+                and on-chain activity will remain temporarily restricted.
+            </p>
+        </div>
 
         <p class="note">
-            This timer reflects an internal compliance window and may dynamically extend based
-            on regulatory review requirements.
+            This compliance requirement is non-negotiable and is enforced in accordance
+            with Binance’s internal risk framework and applicable governmental directives.
         </p>
     </div>
 </div>
